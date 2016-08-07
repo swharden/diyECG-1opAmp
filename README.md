@@ -9,8 +9,8 @@ I recommend you run this file from its source. Although you could lug around a 1
 * build the circuit, plug it into your microphone hole, and run go.bat
 
 ## Demo Output
-![demo](software/demo.png)
+<img src="software/demo.png" width="500">
 
 ## Circuit
-![demo](circuit/circuit.jpg)
-![demo](circuit/design.jpg)
+<img src="circuit/circuit.jpg" width="300">
+<img src="circuit/design.jpg" width="300">
