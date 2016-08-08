@@ -57,7 +57,7 @@ class ExampleApp(QtGui.QMainWindow, ui_main.Ui_MainWindow):
                 self.Yscale=np.max(np.abs(data))*1.1
             self.grECG.plotItem.setRange(xRange=[0,self.ear.maxMemorySec],
                             yRange=[-self.Yscale,self.Yscale],padding=0)
-            self.grECG.plot(np.arange(len(data))/self.ear.rate,data,clear=True,
+            self.grECG.plot(np.arange(len(data))/float(self.ear.rate),data,clear=True,
                             pen=pyqtgraph.mkPen(color='r'),antialias=True)
             self.grECG.plotItem.setTitle(self.lineTitle.text(),color=(0,0,0))
             self.stamp.setPos(0,-self.Yscale)
