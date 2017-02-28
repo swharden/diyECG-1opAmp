@@ -28,6 +28,8 @@ class ExampleApp(QtGui.QMainWindow, ui_main.Ui_MainWindow):
         self.stamp = pyqtgraph.TextItem(stamp,anchor=(-.01,1),color=(150,150,150),
                                         fill=pyqtgraph.mkBrush('w'))
         self.ear = swhear.Ear(chunk=int(100)) # determines refresh rate
+        # optionally you can manually set the audio input device to use like this:
+        # self.ear = swhear.Ear(chunk=int(100), device=5) # use audio input device 5
         if len(self.ear.valid_input_devices()):
             self.ear.stream_start()
             self.lblDevice.setText(self.ear.msg)
