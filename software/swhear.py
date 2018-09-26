@@ -154,6 +154,7 @@ class Ear(object):
         self.keepRecording=True # set this to False later to terminate stream
         self.dataFiltered=None #same
         self.stream=self.p.open(format=pyaudio.paInt16,channels=1,
+                      input_device_index=self.device
                       rate=self.rate,input=True,frames_per_buffer=self.chunk)
         self.stream_thread_new()
 
