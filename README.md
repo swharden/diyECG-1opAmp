@@ -1,12 +1,20 @@
-# diyECG-1opAmp
-A surprisingly good ECG is possible from a single op-amp. This project contains circuit and software.
+# DIY ECG (with 1 op-amp)
+**A surprisingly good ECG is possible using a single op-amp.** The main idea is that you _allow_ the simple circuit to amplify noise (mixed in with your ECG), send the noisy signal into a PC using the microphone jack of the sound card, then use Python to remove the noise in real time, revealing the ECG.
 
-* Project page: http://www.swharden.com/wp/2016-08-08-diy-ecg-with-1-op-amp/
-* YouTube demo of project in action: https://www.youtube.com/watch?v=AfirWls9Sys
 
-## Alternative Project (EXE)
-Many people have found this python program difficult to use. A simpler program (with a click-to-run EXE you can download and run on any computer) is here:\
-https://github.com/swharden/SoundCardECG
+**Project page:** http://www.swharden.com/wp/2016-08-08-diy-ecg-with-1-op-amp/
+
+**YouTube demo:** https://www.youtube.com/watch?v=AfirWls9Sys
+
+[![](software/youtube.png)](https://www.youtube.com/watch?v=AfirWls9Sys)
+
+## Alternative Project (Sound Card ECG)
+Many people have found this python source code difficult to use due to its dependence on version-specific libraries. A simpler click-to-run EXE for Windows that does essentially the same thing (written in C#) is available on the [**Sound Card ECG project page**](https://github.com/swharden/SoundCardECG).
+
+Screenshot | Video Demonstration
+---|---
+![](https://raw.githubusercontent.com/swharden/SoundCardECG/master/src/SoundCardECG/screenshot.png) | [![SoundCardECG Demonstration](https://raw.githubusercontent.com/swharden/SoundCardECG/master/graphics/thumb4-play.jpg)](https://youtu.be/sP_-f5nsOEo)
+
 
 ## Python Setup
 This software needs certain libraries like PyQt4 and numpy, so the easiest way to make sure you have versions of everything that get along is to download a pre-packaged Python distribution. This software has been tested and works with WinPython 3.5.2.1 (not the Qt5 one)
@@ -17,6 +25,9 @@ This software needs certain libraries like PyQt4 and numpy, so the easiest way t
 
 <img src="software/demo.png" width="500">
 
-## Circuit
-<img src="circuit/circuit.jpg" width="300">
+## Hardware
+
 <img src="circuit/design.jpg" width="300">
+---
+<img src="circuit/circuit.jpg" width="300">
+
