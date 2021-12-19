@@ -30,7 +30,7 @@ This software needs certain libraries like PyQt4 and numpy, so the easiest way t
 
 ## Python Analysis
 
-If you build the 1-op-amp ECG circuit and record data as a WAV file you can use a Python script like [data/analyze.py](analyze.py) to reduce the noise and plot the result, creating an interactive figure like this:
+If you build the 1-op-amp ECG circuit and record data as a WAV file you can use a Python script like [analyze.py](data/analyze.py) to reduce the noise and plot the result, creating an interactive figure like this:
 
 ![](data/result2.png)
 
