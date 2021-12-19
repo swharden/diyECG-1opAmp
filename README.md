@@ -16,7 +16,10 @@ Screenshot | Video Demonstration
 ![](https://raw.githubusercontent.com/swharden/SoundCardECG/master/src/SoundCardECG/screenshot.png) | [![SoundCardECG Demonstration](https://raw.githubusercontent.com/swharden/SoundCardECG/master/graphics/thumb4-play.jpg)](https://youtu.be/sP_-f5nsOEo)
 
 
-## Python Setup
+## Python GUI
+
+> **Warning: This Python 2 code is obsolete.** To get this software running you must install a legacy Python 2 on your system. Consider using a more modern software option like this [Sound Card ECG using C#/.NET](https://github.com/swharden/SoundCardECG).
+
 This software needs certain libraries like PyQt4 and numpy, so the easiest way to make sure you have versions of everything that get along is to download a pre-packaged Python distribution. This software has been tested and works with WinPython 3.5.2.1 (not the Qt5 one)
 
 * install [WinPython-64bit-3.5.2.1](https://sourceforge.net/projects/winpython/files/WinPython_3.5/3.5.2.1/) _(not the Qt5 one)_
@@ -24,6 +27,12 @@ This software needs certain libraries like PyQt4 and numpy, so the easiest way t
 * build the circuit, plug it into your microphone hole, and run go.bat
 
 <img src="software/demo.png" width="500">
+
+## Python Analysis
+
+If you build the 1-op-amp ECG circuit and record data as a WAV file you can use a Python script like [data/analyze.py](analyze.py) to reduce the noise and plot the result, creating an interactive figure like this:
+
+![](data/result2.png)
 
 ## Hardware
 
